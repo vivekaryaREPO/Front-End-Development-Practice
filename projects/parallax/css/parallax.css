@@ -1,0 +1,29 @@
+div{
+    height: 700px;
+    margin: 0px;
+    padding: 0px;
+    background-size: cover;
+
+}
+
+
+h1{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+p{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    
+}
+
+.centreDiv{
+    width: 500px;
+    margin: 0 auto;
+    padding-top: 250px;
+    background-size: cover;
+    
+    
+}

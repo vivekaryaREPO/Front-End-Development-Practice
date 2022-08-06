@@ -1,0 +1,220 @@
+--SECTION 4:Lecture 1:--
+
+1. You can write css at 3 places:
+    a) in a separate file and link into html file where you wanna use it. 
+       You can link it using <link> tag and use rel,href attribute on link 
+       tag on it, rel="stylesheet", href="path of the file" #last_priority.
+
+    b) or use it inside <style> tag of <head> tag of html file where you wanna apply css. #second last priority
+    
+    c) inside the element itself as an attribute. #highest priority.
+
+2. If you mention a style twice for the same element in a same file/or inside element/or separate file,
+    the style mentioned at the last is considered to be the latest one and It'll have the highest priority.
+
+
+--SECTION 4:Lecture 2:--
+
+1. There are three ways to choose color:
+    eg. h1{
+        color:red;
+    }
+    check colors from fontawesome.com
+    body{
+        bgc:red; //bgc=>background color or background-color.
+    }
+    => use hash values to give colors.
+    => or use rgb() i.e red green blue, so rgb(10,20,30) means 10% red,20% blue,30%blues
+
+2.Use your color picker plugh in to get the rgb values of hash values of color.
+
+
+--SECTION 4:Lecture 3:--
+
+1. Coming soon template-project
+2. use body{
+    background-image: url("../images//bg1.jpg");
+} to repeat a certain image continuously into a page as whole.
+
+3. To use a single image as whole in a page use:
+body{
+    background: url("../images/bgcat.jpeg");
+    no-repeat center center fixed  ; don't repeat the image, make it centre from everywher(left,right,top,bottom), and make it fixed, i.e do not change image size on decrease or increase of page size
+    background-size:cover; //we want this image to be a cover image
+}
+
+--SECTION 4:Lecture 4:--
+
+lets move text in the project
+click on element-> inspect ->computed= the blue content is your conten i.e the one you clicked for inspect
+1. use width:valuepx to get an element which is not screen long wide
+2. padding:valuepx is to get space between the text and border of the element
+3.margin-top:valuepx to get a space from top on an element.
+4. to get an element to a centre of a page, and adjust when the device size is increased or decreased
+    a) margin:0 auto;
+        0=>margin from top and bottom is 0.
+        auto=>margin from left and right should be equal and should be best fit to device.
+    
+    b)margin-top:300px
+        if only margin is defined, like above, it means we are defining top,bottom,left right in one property itself i.e margin:0 auto.
+        and along with margin if you also explicitly specify margin-top , it means you are overriding the top value of
+        the margin property you have defined before. Note: margin property is always relative to the previous element i.e it always
+        takes pixels from the one element above it.
+
+
+
+5. by default an element is on left, you can bring it to centre/right etc using text-align:center /text-align:left.
+6.border: px type color  => used to define the element border property.
+
+--SECTION 4:Lecture 5:--
+
+1. Google fonts
+   Go to google fonts-> choose the font->select this style->view your selected families->copy link and paste in your head->
+   use the font-family:value1, value2 .. as a style property.
+2. Use font-size:valueeM to increase font size.
+3. You can put your h1 inside a div to separately style background of div where your h1 is.
+4. search for font awesome cdn and copy link from bootstrap. Then goto fontawesome.com and get icons element
+and paste it whereever you like.
+
+---------------------------------------------*******************------------------------------------------
+
+--SECTION 5:Lecture 1:
+
+Project Gym coming soon-part 1.
+1. border-radius css property adds a curve around an element
+
+
+--SECTION 5:Lecture 2:
+
+Project Gym coming soon-part 2.
+1. opacity: reduces the thickness of the element
+
+--SECTION 5:Lecture 3:
+
+Sushi restro-part 1.
+1. css tricks.com
+2. this project will have a background video.
+3. we'll center our elements in a better way. Use negative margin-top/right/left/bottom to 
+   center the element itself.
+4. mp4 videos work well in chrome but not in mozilla and all, so we need to use other also, so we use
+    video and also sources tag.
+5. muted and loop property of a video tag
+
+
+--SECTION 5:Lecture 3:
+Sushi restro-part 2.
+
+1. To ensure that the video is always shown in full no matter what the screen size is, we use height
+css property of the body and give it 100% as value.
+2.top, left property of the video element
+3.z-index allows you to decide which element should be on the top and which one to be at the bottom
+of the page, i.e which one should be above the other.
+4. font-size, height of element,
+
+--SECTION 5:Lecture 1:
+Styling link.
+
+1. A link could be in any of the below state:
+    link,hover,visited,active
+you can modify these states by below syntax:
+a:state{
+
+} the state could be any of above given states.
+eg. a:link{
+    color:red;
+}
+
+2. To apply same style for two states together:
+a:link,a:visited{
+    background-color:hotpink;
+    color:white;
+    padding:25px 25px;
+    text-align:center;
+    text-decoration:none;
+    display:inline-block;
+}
+a:hover{
+    background-color:red;
+}
+
+3. You can use text-decoration:none; to disable all the default styles on anchor element.
+
+
+--SECTION 5:Lecture 2:
+classes and IDs
+
+1. You can define width and height of the element.
+eg. div{
+    height:100px;
+    background:green;
+}
+
+2. Let's say we want to style n elements in m diffrent ways, we can give group the divs by giving them same class names.
+and now you can style by using class name.
+
+eg. .pink{                html
+                        <div class ="pink"></div>
+}
+
+.black{                     html
+                        <div class ="black"></div>
+}
+
+3. You can style an element with a particular id by using below syntax:
+ #id{
+
+ }
+
+ eg. #12{
+     background-color:red;
+ }
+
+ --SECTION 5:Lecture 3:
+ Designing a navigation bar from scratch.
+ 1. Use list-style-type:value to style a ul to give a specific type of li.
+ 2. You can style li diffrently.
+ 3. To style an element present inside another element, there is below syntax:
+ outer-element inner-element{
+
+ }
+
+ eg. to style an anchor tag present inside an li
+ li a{
+
+ }
+
+ similarly to style state of anchor inside li
+ li a:hover{
+
+ }
+
+ 4. You can use float:left/right etc to align a list element in one row instead of separate row at each
+ li.
+
+ 5. You sometimes need to apply overflow: hidden; on an element like <div> to ensure that
+  background color is shown
+
+   --SECTION 5:Lecture 4:
+   Color pallete
+
+   --SECTION 5:Lecture 5:
+   Parallax effect
+   
+   1.If you don't want a space between those two elements, you can padding:0,and margin:0
+    property on both the elements that have sapace between them.
+    
+    --SECTION 5:Lecture 6:
+    parallax part 2
+
+    --SECTION 5:Lecture 7:
+    html template edit-part1
+
+    --SECTION 5:Lecture 8:
+    html template edit-part2
+    1. You can style multiple elements by separating element names with commas
+
+    --SECTION 5:Lecture 9:
+    challenge to edit a template
+
+    ------------------------------------------*****----------------------------------------------------
+    

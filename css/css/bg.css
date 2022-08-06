@@ -1,0 +1,27 @@
+/* body{
+    background-image: url("../images//bg1.jpg");
+} */
+
+body{
+    background: url("../images/bgcat.jpeg") no-repeat center center fixed;
+     /*don't repeat the image, make it centre from everywher(left,right,top,bottom), and make it fixed, i.e do not change image size on decrease or increase of page size */
+     background-size:cover;  /* we want this image to be a cover image */
+}
+
+
+h1{
+color:black;
+border: 2px solid red;
+width: 400px;
+text-align: center;
+margin: 0 auto;
+margin-top: 300px;
+font-family: 'Lobster', cursive;
+font-size: 3em;
+}
+div{
+    background-color: aqua;
+}
+i{
+    color: red;
+}

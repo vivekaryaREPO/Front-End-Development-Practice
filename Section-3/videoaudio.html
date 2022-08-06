@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio | Video </title>
+</head>
+<body>
+    <!-- NOTES: Section 3 lec 3:
+    1. Use video tag to add video.
+    2. Use control attribute on video tag to enable the actions on the video.
+    3. If you specifically want a specific extesion of a video to be played on a website, 
+        you can use a source element inside the video element and give the type value as the format.
+    4. Use audio tag in a same way as video tag to have audio - make sure you use controls tag, otherwise
+        it will remain invisible.
+    5. Copy youtube embedded code from share button of the youtube video, to add youtube videos
+       in a html page.
+     -->
+    <h1> We are adding video here</h1>
+    <video src="./video/intro-IT-hb.mp4" controls width="500px" height="300px"></video>
+
+    <video controls width="500px" height="300px">
+        <source src="./video//intro-IT-hb.mp4" type="video/mp4">
+    </video>
+    <div>
+        <audio src="./audio//broken-shovel.mp3" controls></audio>
+    </div>
+    <div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/aKVs1_AQ9LM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</body>
+</html>

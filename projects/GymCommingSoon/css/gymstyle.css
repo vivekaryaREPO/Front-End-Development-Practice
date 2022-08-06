@@ -1,0 +1,35 @@
+body{
+    background: url("../images/bgGymOp.png") no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Dosis', sans-serif;
+    font-family: 'Nerko One', cursive;
+}
+
+div{
+    background-color: aquamarine;
+    width: 40%;
+    margin: 60px auto;
+    border-radius: 25px;
+    text-align: center;
+    opacity: 0.9;
+}
+
+button{
+    background: orange;
+    padding: 20px;
+    color: white;
+    font-size: 2em;
+    border-radius: 10px;
+}
+h1{
+    font-size: 4em;
+        
+    }
+
+p{
+     font-size: 1.8em;
+}
+i{
+    font-size:100px;
+    color:red
+}

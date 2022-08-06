@@ -1,0 +1,31 @@
+ul{
+    list-style-type: none;
+    
+}
+
+li{
+    float: left;
+    
+}
+
+li a{
+    text-decoration: none;
+    color:darkorange;
+    padding: 15px 18px;
+    font-size: 30px;
+    text-align: center;
+    
+}
+
+div{
+    background-color: aqua;
+    overflow: hidden;
+    margin-top: 50px;
+    
+}
+.right{
+    float:right;
+}
+li a:hover{
+    background-color: cadetblue;
+}
